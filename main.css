@@ -1,30 +1,25 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-<title>main</title>
-
+<meta charset="utf-8">
+<title>main-css</title>
 </head>
+<body> { 
+max-width: auto;
+min-width: auto;
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;}
 
-section {
-    
-    background: #B5FFF8;
-    box-shadow: 0 2px rgba(5, 10, 10, 10.06);
-    color: #403F3F;
-    font-family: "Helvetica Neue", serif;
-    font-size: 16px;
-    line-height: 1.5;
-    margin: 0 auto;
-    max-width: 800px;
-    padding: 2em 2em 4em;
-    
-    
-    
-    
-    
-    
-    
-    
-}
+
+
+
+
+
+
+
+
 
 body {
     background: #fff;
@@ -41,15 +36,16 @@ body {
 
 
 nav  {
-    background: #E0FFFC;
-    box-shadow: 0 0 2px rgba(0, 0, 0, 0.06);
-    color: #545454;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 12px;
-    line-height: 1.5;
-    margin: 0 auto;
-    max-width: 800px;
-    padding: 2em 2em 4em;
+    margin-left: auto;
+    margin-right: auto;
+    background: turquoise;
+    display: block;
+    padding: 6px;
+    max-width:800px;
+    height: auto;
+    clear: left;
+    
+    
 }
 
 
@@ -67,66 +63,31 @@ header {
 }
 
 
-h1 {
-    background: #fff;
-    box-shadow: 0 0 2px rgba(0, 0, 0, 0.06);
-    color: #545454;
-    font-family: "times new roman", Helvetica, Arial, sans-serif;
-    font-size: 35px;
-    line-height: 1.5;
-    margin: 0px auto;
-    max-height: 400px;
-    max-width: 800px;
-    padding: 0em 0em 0em;
-}
 
 
 
-footer {
+h3 {
+
+    
     background: #E0FFFC;
-    box-shadow: 0 0 2px rgba(0, 0, 0, 0.06);
     color: #545454;
     font-family: "times new roman", Helvetica, Arial, sans-serif;
     font-size: 12px;
     line-height: 1.5;
-    margin: 0px auto;
-    max-height: 400px;
-    max-width: 800px;
+    padding: 0em 0em 0em;
+}
+
+footer {
+
+    
+    background: #E0FFFC;
+    color: #545454;
+    font-family: "times new roman", Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    line-height: 1.5;
     padding: 0em 0em 0em;
 }
 
 
 
-
-a {
-    color: #0083e8;
-}
-
-b, strong {
-    font-weight: 600;
-}
-
-samp {
-    display: none;
-}
-
-img {
-    animation: colorize 2s cubic-bezier(0, 0, .78, .36) 1;
-    background: transparent;
-    border: 10px solid rgba(0, 0, 0, 0.12);
-    border-radius: 4px;
-    display: block;
-    margin: 1.3em auto;
-    max-width: 95%;
-}
-
-@keyframes colorize {
-    0% {
-        -webkit-filter: grayscale(100%);
-        filter: grayscale(100%);
-    }
-    100% {
-        -webkit-filter: grayscale(0%);
-        filter: grayscale(0%);
-    }
-}
+</body>
