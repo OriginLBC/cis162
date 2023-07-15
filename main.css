@@ -1,44 +1,44 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<title>main-css</title>
+<title>FOOOOOOOOOD</title>
 </head>
-<body> { 
-max-width: auto;
-min-width: auto;
-    margin-left: auto;
-    margin-right: auto;
-    width: auto;}
-
-
-
-
-
-
-
-
-
 
 body {
-    background: #fff;
-    box-shadow: 0 0 2px rgba(0, 0, 0, 0.06);
-    color: #545454;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 16px;
-    line-height: 1.5;
-    margin: 0 auto;
-    max-width: 800px;
-    padding: 2em 2em 4em;
-
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-areas: "header header"
+                         "intro     faq"
+                         "articles  faq"
+                         "footer footer";
+    grid-column-gap: 15px;
 }
 
+body > header {
+    grid-row: 1;
+    grid-column: 1/-1;
+    
+}
+
+body > article {grid-area: intro;}
+body >aside {grid-area: faq;}
+body > section {grid-area: articles;}
+body >footer {grid-area: footer;}
+
+/*grid styles for nested grid*/
+
+section {
+    display: grid;
+    grid-template-columns: repeat (2,1fr);
+}
+section {
+    grid-area: 1/1/2/3;
+}
 
 nav  {
     margin-left: auto;
     margin-right: auto;
-    background: turquoise;
+    background: orange;
     display: block;
     padding: 6px;
     max-width:800px;
@@ -48,46 +48,3 @@ nav  {
     
 }
 
-
-
-header {
-    background: #7FFFD4;
-    box-shadow: 0 0 2px rgba(0, 0, 0, 0.06);
-    color: #545454;
-    font-family: "times new roman", Helvetica, Arial, sans-serif;
-    font-size: 35px;
-    line-height: 1.5;
-    margin: 0 auto;
-    max-width: 800px;
-    padding: 1em 1em 1em;
-}
-
-
-
-
-
-h3 {
-
-    
-    background: #E0FFFC;
-    color: #545454;
-    font-family: "times new roman", Helvetica, Arial, sans-serif;
-    font-size: 12px;
-    line-height: 1.5;
-    padding: 0em 0em 0em;
-}
-
-footer {
-
-    
-    background: #E0FFFC;
-    color: #545454;
-    font-family: "times new roman", Helvetica, Arial, sans-serif;
-    font-size: 12px;
-    line-height: 1.5;
-    padding: 0em 0em 0em;
-}
-
-
-
-</body>
