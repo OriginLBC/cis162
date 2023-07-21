@@ -66,6 +66,7 @@
             grid-area: intro;
             background-color: #F0F0F0;
             padding: 10px;
+            text-align: center; /* Center the content within the article */
         }
 
         /* FAQ section */
@@ -108,49 +109,21 @@
         </ul>
     </nav>
 
-    <div class="gallery">
-        <a target="_blank" href="img_5terre.jpg">
-            <img src="https://img.freepik.com/free-vector/hand-drawn-international-beer-day-illustration_23-2148990255.jpg?w=740&t=st=1689976444~exp=1689977044~hmac=a161bce940c6ad2fa81c8eff94806ddaf5ff708ba147f8628797f540d375b39d" alt="Cinque Terre" width="600" height="400">
-        </a>
-        <div class="desc">Adult Beverages!</div>
-    </div>
-
-    <div class="gallery">
-        <a target="_blank" href="img_forest.jpg">
-            <img src="https://img.freepik.com/free-photo/smiley-woman-enjoying-burgers-by-beach_23-2148666631.jpg?w=740&t=st=1689976662~exp=1689977262~hmac=eb548afb48187513dea2747fe4051364c87cb988d18483fc1050cf070e1ed6b2" alt="Forest" width="600" height="400">
-        </a>
-        <div class="desc">Plenty of food vendors</div>
-    </div>
-
-    <div class="gallery">
-        <a target="_blank" href="img_lights.jpg">
-            <img src="https://img.freepik.com/free-photo/side-view-people-with-tasty-food_23-2149525570.jpg?w=900&t=st=1689976759~exp=1689977359~hmac=8a3a09f70d6501de9c81c2d88c27e3bf0ead7ed9fc9b50a1693dd4c83955d14c" alt="Northern Lights" width="600" height="400">
-        </a>
-        <div class="desc">Games and plenty of seating to relax</div>
-    </div>
-
-    <div class="gallery">
-        <a target="_blank" href="img_mountains.jpg">
-            <img src="https://img.freepik.com/free-vector/flat-design-food-festival-illustration_23-2149459797.jpg?w=740&t=st=1689976874~exp=1689977474~hmac=d0ace57ef1b48d6092e98edc02a0d03a0094c9b5bd6667c8f236f2a34a5c3161" alt="Mountains" width="600" height="400">
-        </a>
-        <div class="desc">23 Foodie Festival!</div>
-    </div>
-
     <article>
         <h2>Welcome to the Food Festival!</h2>
-        <p>Stay tuned for exciting food experiences.</p>
+        <p>On this page, we will need to validate if you are 21+ to purchase wristbands to be able to drink adult beverages.</p>
+        <form action="non_working.php" method="post"> <!-- Replace "non_working.php" with the correct action URL -->
+            <label for="firstname">First name:</label>
+            <input type="text" name="firstname" id="firstname" required><br>
+            <label for="surname">Last Name:</label>
+            <input type="text" name="surname" id="surname" required><br>
+            <input type="reset" value="Reset">
+            <input type="submit" value="Submit">
+        </form>
+        <p>Any questions regarding sign-in info, please email to <input type="email" value="foodiefest@fakemail.com" disabled></p>
     </article>
-    
-    <aside>
-        <h2>FAQ</h2>
-        <p>Frequently Asked Questions about the Food Festival.</p>
-    </aside>
-    
-    <section>
-        <h2>Food Articles</h2>
-        <p>pending</p>
-        <p>blah blah blah pending.</p>
-    </section>
+
+
 
     <footer>
         <p>&copy; 2023 Foodie Festival. All rights reserved.</p>

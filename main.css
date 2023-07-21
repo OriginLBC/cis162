@@ -2,49 +2,48 @@
 <html lang="en">
 <head>
 <title>FOOOOOOOOOD</title>
-</head>
-
+<style>
 body {
     display: grid;
     grid-template-columns: 2fr 1fr;
-    grid-template-areas: "header header"
-                         "intro     faq"
-                         "articles  faq"
-                         "footer footer";
+    grid-template-areas: 
+        "header header"
+        "intro  faq"
+        "articles  faq"
+        "footer footer";
     grid-column-gap: 15px;
 }
 
 body > header {
     grid-row: 1;
     grid-column: 1/-1;
-    
 }
 
-body > article {grid-area: intro;}
-body >aside {grid-area: faq;}
-body > section {grid-area: articles;}
-body >footer {grid-area: footer;}
+body > article {
+    grid-area: intro;
+}
 
-/*grid styles for nested grid*/
+body > aside {
+    grid-area: faq;
+}
 
-section {
+body > section {
+    grid-area: articles;
     display: grid;
-    grid-template-columns: repeat (2,1fr);
-}
-section {
-    grid-area: 1/1/2/3;
+    grid-template-columns: repeat(2, 1fr);
 }
 
-nav  {
-    margin-left: auto;
-    margin-right: auto;
-    background: orange;
-    display: block;
-    padding: 6px;
-    max-width:800px;
-    height: auto;
-    clear: left;
-    
-    
+body > footer {
+    grid-area: footer;
 }
 
+
+</style>
+</head>
+<body>
+
+
+
+
+</body>
+</html>
