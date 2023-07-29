@@ -3,6 +3,8 @@
 <head>
 <title>FOOOOOOOOOD</title>
 <style>
+
+
 body {
     display: grid;
     grid-template-columns: 2fr 1fr;
@@ -12,11 +14,13 @@ body {
         "articles  faq"
         "footer footer";
     grid-column-gap: 15px;
+    
 }
 
 body > header {
     grid-row: 1;
     grid-column: 1/-1;
+
 }
 
 body > article {
